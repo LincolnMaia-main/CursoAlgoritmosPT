@@ -1,0 +1,8 @@
+algoritmo "Meu Nome"
+var
+    nome: caractere
+inicio
+escreva("Digite seu nome")
+leia (nome)
+escreva ("Muito prazer ", Nome)
+fimalgoritmo

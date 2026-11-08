@@ -1,0 +1,13 @@
+algoritmo "Creuza teve que pegar um empréstimo no banco"
+var
+   emprestimo, parcelas, valorFinal, valorParcela: Real
+inicio
+   Escreva("Qual o valor do empréstimo? R$")
+   Leia(emprestimo)
+   Escreva("Quantas parcelas? ")
+   Leia(parcelas)
+   valorFinal <- (emprestimo*120)/100
+   valorParcela <- valorFinal/parcelas  
+   EscrevaL("-> Você irá pagar ", parcelas, " de R$", valorParcela)
+   EscrevaL("-> O valor final a se pagar será de R$", valorFinal)
+fimalgoritmo

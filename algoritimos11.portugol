@@ -1,0 +1,27 @@
+algoritmo "Esta Apto a Dirigir?"
+
+var
+  idade, anoAtual, anoNasc: Inteiro
+   
+inicio
+  Escreval("--------------------------")
+  Escreval(" DEPARTAMENTO DE TRÂNSITO ")
+  Escreval("--------------------------")
+  Escreva("Ano Atual (yyyy): ")
+  Leia(anoAtual)
+  Escreva("Ano de Nascimento (yyyy): ")
+  Leia(anoNasc)
+  
+  Escreval("--------- STATUS ---------")
+  idade <- anoAtual - anoNasc
+  
+  Escreval("IDADE: ", idade)
+  
+  Se (idade >= 18) entao
+     Escreval("APTO PARA TIRAR A CARTEIRA")
+  senao
+       Escreval("INAPTO PARA TIRAR A CARTEIRA")
+  FimSe
+  Escreva("--------------------------")
+  
+fimalgoritmo

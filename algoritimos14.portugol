@@ -1,0 +1,29 @@
+algoritmo "Quantidade de Dependentes de um(a) Funcionário(a)"
+
+var
+  nome: Caractere
+  salario, novoSalario : Real
+  dependentes : Inteiro
+   
+inicio
+  Escreva ("Qual o nome do Funcionário(a)? ")
+  Leia (nome)
+  Escreva ("Qual o salario do Funcionario(a)? R$")
+  Leia (salario)
+  Escreva ("Qual e a quantidade de dependentes? ")
+  Leia (dependentes)
+
+  Escolha dependentes
+    Caso 0
+      novoSalario <- salario + (salario*5/100)
+    Caso 1, 2, 3
+      novoSalario <- salario + (salario*10/100)
+    Caso 4, 5, 6
+      novoSalario <- salario + (salario*15/100)
+    OutroCaso
+      novoSalario <- salario + (salario*18/100)
+  FimEscolha
+
+  EscrevaL ("O novo salario de ", nome, " sera de R$", novoSalario)
+   
+fimalgoritmo

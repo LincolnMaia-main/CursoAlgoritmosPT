@@ -1,0 +1,19 @@
+algoritmo "Fazer Vitamina de Banana"
+var
+  resposta: Caractere
+  Procedimento fazerVitaminaDeBanana()
+  Inicio
+    EscrevaL("[x] Pegar 2 bananas")
+    EscrevaL("[x] Pegar 500ml de água")
+    EscrevaL("[x] Pegar 50g de leite")
+    EscrevaL("[x] Colocar tudo no Liquidificador")
+    EscrevaL("[x] Bater tudo no Liquidificador por 5min")
+  FimProcedimento
+inicio
+  Escreva("Quer fazer uma vitamina de banana [S/N]? ")
+  Leia(resposta) 
+  EscrevaL()
+  Se (resposta = "s") entao
+    fazerVitaminaDeBanana()
+  FimSe
+fimalgoritmo

@@ -1,0 +1,14 @@
+algoritmo "Passagem de Parâmetros"
+var
+  X, Y: Inteiro
+  Procedimento Soma(A, B: Inteiro)
+  Inicio
+    Escreval("Recebi o valor ", A)   // A recebeu o valor da variável X como referência
+    Escreval("Recebi o valor ", B)   // B recebeu o valor da variável Y como referência
+    Escreval("A soma entre os dois é ", A + B)
+  FimProcedimento
+inicio
+  X <- 5
+  Y <- 3
+  Soma(X, Y) 
+fimalgoritmo

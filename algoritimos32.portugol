@@ -1,0 +1,16 @@
+algoritmo "Verificador Par/Ímpar"
+var
+  numero: Inteiro
+  Procedimento ParOuImpar(N: Inteiro)  // O parâmetro N recebe o valor do seu argumento como referência
+  Inicio
+    Se (N%2 = 0) entao
+      Escreval("O número ", N, " é PAR")
+    senao
+      Escreval("O nùmero ", N, " é ÍMPAR")
+    FimSe
+  FimProcedimento
+inicio
+  Escreva("Digite um número: ")
+  Leia(numero)
+  ParOuImpar(numero)  // Chamando o procedimento ParOuImpar() e Passando a variável número como Argumento
+fimalgoritmo

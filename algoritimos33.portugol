@@ -1,0 +1,30 @@
+algoritmo "ESCOPO"
+var
+  N1, N2: Inteiro
+  Procedimento Rotina(A, B: Inteiro)
+  var
+    X, Y: Inteiro
+  Inicio
+    X <- A
+    Y <- B
+    EscrevaL("DENTRO DO PROCEDIMENTO 'ROTINA'") 
+    EscrevaL("Valor de N1: ", N1)
+    EscrevaL("Valor de N2: ", N2)     
+    EscrevaL("Valor de A: ", A)       
+    EscrevaL("Valor de B: ", B)       
+    EscrevaL("Valor de X: ", X)       
+    EscrevaL("Valor de Y: ", Y)       
+  FimProcedimento
+inicio
+  N1 <- 5
+  N2 <- 3
+  Rotina(N1, N2)
+  EscrevaL()
+  EscrevaL("FORA DO PROCEDIMENTO 'ROTINA'")
+  EscrevaL("Valor de N1: ", N1)
+  EscrevaL("Valor de N2: ", N2)
+  EscrevaL("Valor de A: ", A)    
+  EscrevaL("Valor de B: ", B)
+  EscrevaL("Valor de X: ", X)
+  EscrevaL("Valor de Y: ", Y)
+fimalgoritmo

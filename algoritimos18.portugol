@@ -1,0 +1,16 @@
+algoritmo "Contar de 0 até onde o usuário quiser *ADICIONAL*"
+var
+  valor, flim, salto: inteiro
+inicio
+  Escreva("Até onde o você quer contar? ")
+  Leia(flim)
+  Escreva("Qual valor do salto? ")
+  Leia(salto)
+  EscrevaL()
+  Enquanto (valor <= flim) faca
+    Escreval(valor)
+    valor <- valor + salto
+  FimEnquanto
+  EscrevaL()
+  Escreval("Terminei de contar!")
+fimalgoritmo

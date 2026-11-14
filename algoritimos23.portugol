@@ -1,0 +1,28 @@
+algoritmo "Melhor Aluno da Turma"
+var
+  alunos, contador: Inteiro
+  nome, melhorAproveitamento: Caractere
+  nota, melhorNota: Real
+inicio
+  contador <- 1
+  Escreval("------------------------")
+  Escreval(" Escola Santa Paciência ")
+  Escreval("------------------------")
+  Escreva("Quantos alunos a turma tem? ")
+  Leia(alunos)
+  Enquanto (contador <= alunos) faca
+    Escreval("-----------------")
+    Escreval("ALUNO(A) ", contador)
+    Escreva("Nome do aluno(a): ")
+    Leia(nome)
+    Escreva("Nota de ", nome, ": ")
+    Leia(nota)
+    Se (nota > melhorNota) entao
+      melhorNota <- nota
+      melhorAproveitamento <- nome
+    FimSe
+    contador <- contador + 1
+  FimEnquanto
+  Escreval("-----------------")
+  Escreval("O melhor aproveitamento foi de ", melhorAproveitamento, " com a nota ", melhorNota)
+fimalgoritmo

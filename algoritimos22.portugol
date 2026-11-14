@@ -1,0 +1,27 @@
+algoritmo "EXERCÍCIO 01 - CONTAGEM INTELIGENTE "
+
+var
+   ini, flim: Inteiro
+   
+inicio
+   Escreval("CONTAGEM INTELIGENTE")
+   Escreval("--------------------")
+   Escreva("Início: ")
+   Leia(ini)
+   Escreva("Fim: ")
+   Leia(flim)
+   Escreval("--------------------")
+   Escreval("      CONTANDO      ")
+   Escreval("--------------------")
+   Se (flim > ini) entao
+      Enquanto (ini <= flim) faca
+         Escreva(ini, (".. "))
+         ini <- ini + 1
+      FimEnquanto
+   senao
+      Enquanto (flim <= ini) faca
+         Escreva(ini, (".. "))
+         ini <- ini -1
+      FimEnquanto
+   FimSe
+fimalgoritmo

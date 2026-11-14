@@ -1,0 +1,14 @@
+algoritmo "Ler 5 números e somá-los"
+var
+  contador, numero, soma: Inteiro
+inicio
+  contador <- 1
+  Enquanto (contador <= 5) faca
+    Escreva("Digite o ", contador, "° número: ")
+    Leia(numero)
+    soma <- soma + numero
+    contador <- contador + 1
+  FimEnquanto
+  EscrevaL()
+  Escreval("A soma de todos os valores é ", soma)
+fimalgoritmo

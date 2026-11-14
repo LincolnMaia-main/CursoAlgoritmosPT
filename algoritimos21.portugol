@@ -1,0 +1,15 @@
+algoritmo "Fazer conversão de moedas 4 vezes"
+var
+  reais, dolar: Real
+  contador: Inteiro
+inicio
+  contador <- 1
+  Enquanto (contador <= 4) faca
+    Escreva("Qual o valor em R$? ")
+    Leia(reais)
+    dolar <- reais / 5.2
+    EscrevaL("O valor convertido: U$", dolar)
+    contador <- contador + 1
+    EscrevaL()
+  FimEnquanto
+fimalgoritmo

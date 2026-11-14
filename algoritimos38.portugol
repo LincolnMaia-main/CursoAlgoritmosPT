@@ -1,0 +1,20 @@
+algoritmo "Fatorial de Um Número"
+var
+  numero, F: Inteiro
+Funcao Fatorial(N:Inteiro): Inteiro
+var
+  contador, resultado: Inteiro
+Inicio
+  resultado <- 1
+  Para contador <- 1 ate N faca
+    resultado <- resultado * contador
+  FimPara
+  Retorne resultado
+FimFuncao
+inicio
+  Escreva("Digite um número: ")
+  Leia(numero)
+  F <- Fatorial(numero)
+  EscrevaL()
+  Escreval("O valor de ", numero, "! è igual a ", F)
+fimalgoritmo

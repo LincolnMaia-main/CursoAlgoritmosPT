@@ -1,0 +1,19 @@
+algoritmo "É Um Número Primo?"
+var
+  numero, contador, primo, divisivel: Inteiro
+inicio
+  contador <- 1
+  Escreva("Digite um número: ")
+  Leia(numero)
+  Repita
+    Se (numero % contador = 0) entao
+      divisivel <- divisivel + 1
+    FimSe  
+    contador <- contador + 1
+  Ate (contador > numero)
+  Se (divisivel > 2) entao
+    Escreval(" O número ", numero, " não é primo! ")
+  senao
+    Escreval(" O número ", numero, " é primo! ")
+  FimSe 
+fimalgoritmo

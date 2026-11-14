@@ -1,0 +1,9 @@
+algoritmo "Contar de 1 Até 10"
+var
+  contador: Inteiro
+inicio
+  Repita
+    contador <- contador + 1
+    Escreval(contador)
+  Ate (contador = 10)
+fimalgoritmo

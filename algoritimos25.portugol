@@ -1,0 +1,15 @@
+algoritmo "Gerador de Tabuada"
+var
+  contador, numero, resultado: Inteiro
+inicio
+  EscrevaL(" GERADOR DE TABUADA  ")
+  EscrevaL("---------------------")
+  Escreva("Quer ver a tabuada de qual número? ")
+  Leia(numero)
+  EscrevaL()
+  Repita
+    contador <- contador + 1
+    resultado <- numero * contador
+    Escreval(numero, " x ", contador, " = ", resultado)
+  Ate (contador = 10)
+fimalgoritmo

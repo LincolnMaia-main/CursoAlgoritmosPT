@@ -1,0 +1,13 @@
+algoritmo "Fatorial de Um Número"
+var
+  numero, fatorial: Inteiro
+inicio
+  Escreva("Digite um nùmero: ")
+  Leia(numero)  
+  fatorial <- 1
+  Repita
+    fatorial <- fatorial * numero
+    numero <- numero - 1
+  Ate (numero < 1)
+  Escreval("O valor do fatorial de ", numero, " é igual a ", fatorial)
+fimalgoritmo

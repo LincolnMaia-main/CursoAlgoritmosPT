@@ -1,0 +1,28 @@
+algoritmo "Construir uma Matriz e Mostrar os Números Pares"
+var
+  m: vetor[1..3, 1..3] de Inteiro
+  linha, coluna, totalPares: Inteiro
+inicio
+  Para linha <- 1 ate 3 faca
+    Para coluna <- 1 ate 3 faca
+      Escreva ("Digite o valor da posicao [", linha, ",", coluna, "]: ")
+      Leia(m[linha, coluna])
+    FimPara
+  FimPara
+  EscrevaL()
+  EscrevaL("MATRIZ")
+  EscrevaL("------")
+  Para linha <- 1 ate 3 faca
+    Para coluna <- 1 ate 3 faca
+       Se(m[linha, coluna] % 2 = 0) entao
+         Escreva("{", m[linha, coluna]:2, "}")
+         totalPares <- totalPares + 1
+       senao
+         Escreva(m[linha, coluna]:4)
+       fimSe
+    FimPara
+    Escreval()
+  FimPara
+  EscrevaL()
+  EscrevaL("Ao todo foram digitados ", totalPares, " números PARES")
+fimalgoritmo

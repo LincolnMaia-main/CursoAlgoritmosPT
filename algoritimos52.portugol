@@ -1,0 +1,35 @@
+algoritmo "Brincando Com Uma Matriz de 4° ordem"
+var
+  m: vetor[1..4, 1..4] de Inteiro
+  i, j, somaDiagonalPrincipal, produtoSegundaLinha, maiorTerceiraColuna: Inteiro
+inicio
+  produtoSegundaLinha <- 1
+  Para i <- 1 ate 4 faca
+    Para j <- 1 ate 4 faca
+      Escreva("Digite o valor da Posicao [", i, ",", j, "]: ")
+      Leia(m[i, j])
+      Se (i = j) entao
+        somaDiagonalPrincipal <- somaDiagonalPrincipal + m[i ,j]
+      FimSe
+    FimPara
+  FimPara
+  EscrevaL()
+  Para i <- 1 ate 4 faca
+    Para j <- 1 ate 4 faca
+      Escreva(m[i, j]:4)
+    FimPara
+    EscrevaL()
+  FimPara
+  EscrevaL()
+  Para i <- 1 ate 4 faca
+    produtoSegundaLinha <- produtoSegundaLinha * m[2, i]
+  FimPara
+  Para i <- 1 ate 4 faca
+    Se (m[i, 3] > maiorTerceiraColuna) entao
+      maiorTerceiraColuna <- m[i, 3]
+    FimSe
+  FimPara
+  EscrevaL("A soma dos valores da Diagonal Principal e ", somaDiagonalPrincipal)
+  EscrevaL("O produto dos valores da Segunda Linha e ", produtoSegundaLinha)
+  EscrevaL("O maior valor da Terceira Coluna e ", maiorTerceiraColuna)
+fimalgoritmo

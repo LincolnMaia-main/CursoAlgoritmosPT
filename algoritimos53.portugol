@@ -1,0 +1,82 @@
+algoritmo "Dissecando Matrizes"
+var
+  m: vetor[1..4, 1..4] de Inteiro
+  linha, coluna, opcao: Inteiro
+Procedimento MostraMatriz()
+inicio
+  Para linha <- 1 ate 4 faca
+    Para coluna <- 1 ate 4 faca
+      Escreva(m[linha, coluna]:4)
+    FimPara
+    EscrevaL()
+  FimPara
+FimProcedimento
+Procedimento DiagonalPrincipal()
+var espaco: inteiro
+inicio
+  Para linha <- 1 ate 4 faca
+    EscrevaL(m[linha , linha]:4)
+    Para espaco <- 1 ate linha faca
+      Escreva("    ")
+    FimPara
+  FimPara
+FimProcedimento
+Procedimento TrianguloSuperior()
+var espaco: Inteiro
+inicio
+  Para linha <- 1 ate 3 faca
+    Escreva("    ")
+    Para coluna <- linha+1 ate 4 faca
+      Escreva(m[linha, coluna]:4)
+    FimPara
+    EscrevaL()
+    Para espaco <- 1 ate linha faca
+      Escreva("    ")
+    FimPara
+  FimPara
+  EscrevaL()
+FimProcedimento
+Procedimento TrianguloInferior()
+inicio
+  Para linha <- 2 ate 4 faca
+    EscrevaL()
+    Para coluna <- 1 ate linha-1 faca
+      Escreva(m[linha, coluna]:4)
+    FimPara
+  FimPara
+  EscrevaL()
+FimProcedimento
+inicio
+  Para linha <- 1 ate 4 faca
+    Para coluna <- 1 ate 4 faca
+      Escreva("Digite valor para a posicao [", linha, ",", coluna, "]: ")
+      Leia(m[linha, coluna])
+    FimPara
+  FimPara
+  LimpaTela
+  Repita
+    EscrevaL()
+    EscrevaL("MENU DE OPCOES")
+    EscrevaL("====================")
+    EscrevaL("[1] Mostrar a Matriz")
+    EscrevaL("[2] Diagonal Principal")
+    EscrevaL("[3] Triangulo Superior")
+    EscrevaL("[4] Triangulo Inferior")
+    EscrevaL("[5] Sair")
+    Escreva("===== OPCAO: ")
+    Leia(opcao)
+    LimpaTela
+    Escolha opcao
+        Caso 1
+          MostraMatriz()
+        Caso 2
+          DiagonalPrincipal()
+        Caso 3
+          TrianguloSuperior()
+        Caso 4
+          TrianguloInferior()
+        Caso 5
+          EscrevaL("ENCERRANDO...")
+    FimEscolha
+  Ate (opcao = 5)
+fimalgoritmo

@@ -1,0 +1,15 @@
+algoritmo "Construindo Um Vetor"
+var
+   v: vetor[1..5] de inteiro
+   i: inteiro
+inicio
+   Para i <- 1 ate 5 faca
+      Escreva("Digete o ", i, "° número: ")
+      Leia(v[i])
+   FimPara
+   EscrevaL()
+   Escreva("Vetor Completo: ")
+   Para i <- 1 ate 5 faca
+      Escreva("{", v[i], "}")
+   FimPara
+fimalgoritmo

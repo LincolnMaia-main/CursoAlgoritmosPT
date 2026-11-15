@@ -1,0 +1,42 @@
+algoritmo "Litagem de Alunos Acima da Média"
+var
+  nome: vetor[1..5] de Caractere
+  nota1: vetor[1..5] de Real
+  nota2: vetor[1..5] de Real
+  media: vetor[1..5] de Real
+  status: vetor[1..5] de Caractere
+  somaMedias, mediaTurma: Real
+  i: Inteiro
+inicio
+   Para i <- 1 ate 5 faca
+      EscrevaL("--------------------")
+      EscrevaL("DADOS DO ALUNO ", i)
+      EscrevaL("--------------------")
+      Escreva("Nome: ")
+      Leia(nome[i])
+      Escreva("Nota 1: ")
+      Leia(nota1[i])
+      Escreva("Nota 2: ")
+      Leia(nota2[i])
+      media[i] <- (nota1[i] + nota2[i])/2
+      Se (media[i] >= 7) entao
+         status[i] <- "APROVADO(A)"
+      senao
+         Se ((media[i] >= 5) e (media[i] < 7)) entao
+               status[i] <- "RECUPERAÇÃO"
+         senao
+               status[i] <- "REPROVADO(A)"
+         FimSe
+      FimSe
+      somaMedias <- somaMedias + media[i]
+   FimPara
+   LimpaTela
+   mediaTurma <- somaMedias / 5
+   EscrevaL ("A media da turma é ", mediaTurma:4:1)
+   EscrevaL("-----------------------------------")
+   EscrevaL("         Listagem de Alunos        ")
+   EscrevaL("-----------------------------------")
+   Para i <- 1 ate 5 faca
+      EscrevaL(nome[i], "   ", media[i]:4:1, "   ", status[i])
+   FimPara
+fimalgoritmo

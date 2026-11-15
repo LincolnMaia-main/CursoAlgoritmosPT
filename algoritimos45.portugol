@@ -1,0 +1,60 @@
+algoritmo "Ordenação de Vetor"
+var
+   v: vetor[1..7] de Inteiro
+   c, ordem: Inteiro
+   Procedimento OrdemCrescente()
+   var
+      i, j, auxiliar: Inteiro
+   inicio
+      Para i <- 1 ate 6 faca
+         Para j <- i+1 ate 7 faca
+            Se (v[i] > v[j]) entao
+               auxiliar <- v[i]
+               v[i] <- v[j]
+               v[j] <- auxiliar
+            FimSe
+         FimPara
+      FimPara
+   FimProcedimento
+   Procedimento OrdemDecrescente()
+   var
+      i, j, auxiliar: Inteiro
+   inicio
+      Para i <- 1 ate 6 faca
+         Para j <- i+1 ate 7 faca
+            Se (v[i] < v[j]) entao
+               auxiliar <- v[i]
+               v[i] <- v[j]
+               v[j] <- auxiliar
+            FimSe
+         FimPara
+      FimPara
+   FimProcedimento
+inicio
+    EscrevaL(" ORDENANDO UM VETOR ")
+    EscrevaL("====================")
+    Para c <- 1 ate 7 faca
+      Escreva("Digite o ", c, "° valor: ")
+      Leia(v[c])
+    FimPara
+    EscrevaL()
+    EscrevaL("Qual forma de Ordenação?")
+    EscrevaL("[1] Ordem Crescente")
+    EscrevaL("[2] Ordem Decrescente")
+    Leia(ordem)
+    Escolha ordem
+      Caso 1
+         OrdemCrescente()
+      Caso 2
+         OrdemDecrescente()
+    FimEscolha
+    EscrevaL()
+    EscrevaL("-------------------------------")
+    Escreva("Vetor Ordenado: ")
+    Para c <- 1 ate 7 faca
+      Escreva (v[c], " ")
+    FimPara
+    EscrevaL()
+    EscrevaL("-------------------------------")
+
+fimalgoritmo

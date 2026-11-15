@@ -1,0 +1,19 @@
+algoritmo "Total de Valores Pares"
+var
+  n: vetor[1..7] de Inteiro
+  i, totPar: Inteiro
+inicio
+   Para i <- 1 ate 7 faca
+      Escreva("Digite o ", i, "° número: ")
+      Leia(n[i])
+   FimPara
+   EscrevaL()
+   Para i <- 1 ate 7 faca
+      Se (n[i] % 2 = 0) entao
+         totPar <- totPar + 1
+         EscrevaL("Número ", n[i], " na ", i, "° posicao é PAR!")
+      FimSe
+   FimPara
+   EscrevaL()
+   EscrevaL("Total de Números Pares Digitados: ", totPar)
+fimalgoritmo

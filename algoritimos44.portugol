@@ -1,0 +1,22 @@
+algoritmo "Só Importa Quem Começa Com C"
+var
+  nome: Caractere
+  iniciamComC: vetor[1..7] de Caractere
+  c, totalComC: Inteiro
+inicio
+   Para c <- 1 ate 7 faca
+      Escreva("Digite o ", c, "° nome: ")
+      Leia(nome)
+
+      Se (copia(maiusc(nome), 1, 1) = "C") entao
+         totalComC <- totalComC + 1
+         iniciamComC[totalComC] <- nome
+      FimSe
+   FimPara
+   LimpaTela
+   EscrevaL("NOMES DIGITADOS QUE COMEÇAM COM C")
+   EscrevaL("---------------------------------")
+   Para c <- 1 ate totalComC faca
+      EscrevaL(iniciamComC[c])
+   FimPara
+fimalgoritmo
